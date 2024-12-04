@@ -53,3 +53,11 @@ A wide variety of words from technical and non-technical domains, including:
 1. Clone the repository:
    ```bash
    git clone https://github.com/jaideepmanat/Hangman-Game.git
+2. Open the project in Android Studio.
+3. Build and run the application on an emulator or physical device.
+
+## Future Enhancements
+- Add difficulty levels (easy, medium, hard).
+- Include animations or sound effects for feedback.
+- Expand the word list or allow custom word input.
+- Integrate multiplayer functionality.
