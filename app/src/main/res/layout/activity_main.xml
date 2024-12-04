@@ -1,0 +1,96 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@android:color/black">
+
+    <!-- Display the hidden word with underscores -->
+    <TextView
+        android:id="@+id/wordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textColor="#FFFFFF"
+        android:text="_ _ _ _ _"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Display the number of remaining lives -->
+    <TextView
+        android:id="@+id/livesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Lives: 5"
+        android:textSize="18sp"
+        android:textColor="#D32F2F"
+        android:fontFamily="sans-serif" />
+
+    <!-- User input for guessing a letter -->
+    <EditText
+        android:id="@+id/guessEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter a letter"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:background="#000000"
+        android:layout_marginTop="24dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColorHint="#B0BEC5" />
+
+
+
+    <!-- Button for submitting the guessed letter -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button for playing again -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/playAgainButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Play Again"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF5722"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <!-- Display used letters -->
+    <TextView
+        android:id="@+id/usedLettersTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Used Letters:"
+        android:textSize="18sp"
+        android:textColor="#1976D2"
+        android:minHeight="48dp" />
+
+    <!-- Display messages or hints -->
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Incorrect guess. Try again."
+        android:textSize="16sp"
+        android:textColor="#FF5252"
+        android:minHeight="48dp" />
+
+</LinearLayout>
